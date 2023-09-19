@@ -18,6 +18,8 @@ class LoginController extends GetxController {
     if (emailController.text.isEmpty || passwordController.text.isEmpty) {
       showErrorToast("Oops!", "Please provide email and password", context);
       return;
+    } else {
+      Get.offNamed(Routes.home);
     }
   }
 
@@ -26,6 +28,7 @@ class LoginController extends GetxController {
     if (emailController.text != "" && passwordController.text != "") {
       if (passwordController.text == confirmPasswordController.text) {
         isPasswordSame.value = true;
+        Get.offNamed(Routes.home);
       } else {
         isPasswordSame.value = false;
         showErrorToast("Oops!", "Passwords does not match", context);

@@ -7,7 +7,6 @@ import '../Constants/responsive_constants.dart';
 import '../Controllers/login_controllers.dart';
 import '../Globals/globals.dart';
 import '../Utils/spacings.dart';
-import '../Widgets/custom_divider_widget.dart';
 import '../Widgets/custom_filter_text_field.dart';
 import '../Widgets/custom_primary_button.dart';
 
